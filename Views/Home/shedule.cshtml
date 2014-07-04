@@ -1,0 +1,36 @@
+﻿
+
+
+
+<div class="row" style="padding-top:20px;margin-left:0px; padding-left:0px">
+      <h3 style="color:orangered">Timings are :  </h3>
+    <h3 style="color:orangered">Slot number 1 : 12pm - 2pm  </h3>
+    <h3 style="color:orangered">Slot number 1 : 3pm - 5pm  </h3>
+    <h3 style="color:orangered">Slot number 1 : 6pm - 8:30pm  </h3>
+    <h3 style="color:orangered">Slot number 1 : 10pm - 12am </h3>
+@foreach(var a in ViewBag.x)
+{
+    
+  
+    <div class="col-md-4" style="padding-left:0px">
+        <h3 style="color:whitesmoke"> Slot number is  : @a.slot</h3>
+          <h3 style="color:aqua"> Genere of movie : @a.description</h3>
+        <div style="background-image:url(/images/@a.image); height:300px; background-size:100% 100%;">
+
+        </div>
+       
+    
+        
+    </div>
+    <div class="col-md-2"></div>
+    
+        
+    
+    
+  
+}
+</div>
+
+
+<br /><br />
+<br /><br />

@@ -1,0 +1,120 @@
+﻿<script src="~/Scripts/jquery-1.10.1.min1.js"></script>
+     <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
+      <script src="~/Scripts/jquery.fancybox.js"></script>
+<script>
+    $(document).ready(function() {
+        /*
+         *  Simple image gallery. Uses default settings
+         */
+
+        $('.fancybox').click(function () {
+            $('.fancybox').fancybox({
+                wrapCSS: 'fancybox-custom',
+                closeClick: true,
+
+                openEffect: 'none',
+
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                }
+            });
+        });
+        
+    });
+    
+    </script>
+
+<br />
+				
+         
+                        <div class="row">
+                            <div class="col-md-12">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active ">
+                        <img  src="~/images/gunday.jpg" alt="image1" class="img-responsive" />
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img  src="~/images/wolf.jpg" alt="image2" class="img-responsive" />
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img  src="~/images/godzilla-960.jpg" alt="image3" class="img-responsive" />
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+                        </div>
+                        
+
+
+				
+						
+            <div class="row">
+               
+                <div class="col-md-12">
+
+                    <div class="box">
+					<div class="border-right">
+						<div class="border-left">
+							<div class="inner">
+								<h3>Welcome to <b>Cinema</b> <span>World</span></h3>
+								<h4>This is the only 7-D cinema in the town</h4>  
+								 
+								<a class="fancybox" href="~/images/guns.jpg" ><img src="~/images/guns.jpg" alt="" /></a>
+								<p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<h3>Fresh <span>Movies</span></h3>
+					<ul class="movies">
+						<li>
+							<h4>Toy Story 3</h4><img src="~/images/1page-img2.jpg" alt="" />
+							<p>Check out Disney-Pixar's official Toy Story site, watch the <span>Toy Story 3</span> trailer, and meet new characters. Remember, no toy gets left behind!</p>
+							</li>
+						<li>
+							<h4>Prince of Percia: Sands of Time</h4><img src="~/images/1page-img3.jpg" alt="" />
+							<p>A young fugitive prince and princess must stop a villain who unknowingly threatens to destroy the world with a special dagger.</p>
+							</li>
+						<li class="last">
+							<h4>The Twilight Saga: Eclipse</h4><img src="~/images/1page-img4.jpg" alt="" />
+							<p>As a string of mysterious killings grips Bella is forced to choose between her love for vampire Edward and her friendship with werewolf Jacob.</p>
+							</li>
+						<li class="clear">&nbsp;</li>
+					</ul>
+				</div>
+
+
+
+                </div> 
+                </div>
+				

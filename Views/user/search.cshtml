@@ -1,0 +1,28 @@
+﻿<script>
+    $(document).ready(function () {
+        $('#name').click(function(){
+
+            
+            
+            var c=$('#search').val();
+          $.getJSON("/user/dosearch?cust=" +c,  function (data) {
+              {
+                  var g = data.slot;
+                  
+                  alert(g);
+                  $(g).append($('#t'));
+                  
+                }
+            });
+        });
+    });
+</script>
+
+
+<br />
+<h3 style="color:snow">Enter the Movie name :</h3><input type="text" id="search" name="name" style="height:25px; width:30%; border-radius:3px"/></li>
+  <br />
+
+<input type="button" id="name" value="search" style="height:45px ;width:70px" />
+ <br />
+<div id="t">gzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzcc</div>

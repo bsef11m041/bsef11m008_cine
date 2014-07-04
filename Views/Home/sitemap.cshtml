@@ -1,0 +1,26 @@
+﻿<br />
+<h2 style="color:whitesmoke" > Find us here :  </h2>
+<br />
+<style>
+      #map_canvas {
+        width: 940px;
+        height: 400px;
+      }
+    </style>
+    <script src="~/Scripts/google.js"></script>>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+            center: new google.maps.LatLng(31.5687029, 74.313264),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  
+    <div id="map_canvas"></div>
+ <br />
+<br />

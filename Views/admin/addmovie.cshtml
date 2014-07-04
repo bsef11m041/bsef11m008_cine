@@ -1,0 +1,46 @@
+﻿@model Cinema.Models.movie
+<script>
+    $(document).ready(function () {
+        $('#name').focusout(function () {
+            
+       
+            var c = $('#name').val();
+            
+          $.getJSON("/admin/check?cust=" +c,  function (data) {
+             
+                if (data == true) {
+                    alert("This movie is already added.Add a new one ");
+                    $('#name').val("");
+                }
+            });
+        });
+    });
+</script>
+
+
+ <form id="ff1" action="/admin/save" method="post" enctype = "multipart/form-data">
+<h3 style="color:snow">Enter the Movie name :</h3><input type="text" id="name" name="name" required style="height:25px; width:30%; border-radius:3px"/>
+<br />
+
+<h3 style="color:snow">Enter the Description :</h3><input type="text" name="description" required  style="height:25px; width:30%; border-radius:3px"/>
+<br />
+     <br />
+<h3 style="color:snow">Upload the movie poster :</h3>
+     <input type="file" name="image" required class="control-group"/>
+      
+<br />
+    <br />
+    <input type="submit"  value="ADD-Movie" id="submit"  style="height:32px ;width:16%;font-size:24px " />
+<br />
+<br />
+    <h3 style="color:snow">@ViewBag.x</h3>
+<br />
+    
+<br />
+</form>
+
+    
+       
+            
+               
+

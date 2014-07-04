@@ -1,0 +1,27 @@
+
+@model Cinema.Models.customer
+ 
+ 
+<div>
+  <link rel="stylesheet" href="~/Content/login.css">
+  <form method="post" action="/user/verify" class="login">
+    <p>
+      @Html.Label("Name :")
+      @Html.TextBoxFor(x => x.name, new { required = "required " })
+    </p>
+
+    <p>
+      @Html.Label("Password :")
+      @Html.TextBoxFor(x => x.pass,new {type="password",required = "required "})
+    </p>
+
+    <p>
+        
+       <h3>LOGIN</h3>  <button type="submit" class="login-button" >Login</button>
+    </p>
+      <h3>  @ViewBag.x </h3>
+        <h3>  @ViewBag.y </h3>
+    <p class="forgot-password"><a href="/user/forget">Forgot your password ?</a></p>
+  </form>
+
+ </div>
